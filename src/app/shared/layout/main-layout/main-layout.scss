@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    height: 100vh;
+
+    div {
+        position: sticky;
+        top: 0px;
+        left: 0px;
+    }
+
+    .dynamic_outlet {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .outlet {
+            flex: 1;
+            overflow-y: auto;
+        }
+    }
+}
