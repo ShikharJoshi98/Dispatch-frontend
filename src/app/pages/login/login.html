@@ -38,7 +38,10 @@
     </div>
 
     <div class="input-group">
-      <input type="password" placeholder="Password" />
+      <input [type]="showPassword ? 'text' : 'password'" placeholder="Password" />
+      <mat-icon class="toggle-password" (click)="showPassword = !showPassword">
+        {{ showPassword ? 'visibility_off' : 'visibility' }}
+      </mat-icon>
     </div>
 
     <button class="login-btn">Login</button>
