@@ -6,8 +6,8 @@ import { MainLayout } from './shared/layout/main-layout/main-layout';
 export const routes: Routes = [
   { path: 'login', component: Login },
   {
-    path: '',
+    path: 'dashboard',
     component: MainLayout,
-    children: [{ path: '', component: Dashboard }],
+    children: [{ path: 'dashboard', component: Dashboard }],
   },
 ];

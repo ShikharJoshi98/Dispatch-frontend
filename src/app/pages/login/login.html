@@ -1,1 +1,48 @@
-<button (click)="goToDashboard()">Login</button>
+<section class="login">
+  <div class="login-left">
+    <div class="content">
+      <h1>RK Enterprises</h1>
+      <p>
+        Smart dispatch solutions to track deliveries, optimize routes, and manage your fleet
+        efficiently.
+      </p>
+    </div>
+  </div>
+
+  <div class="login-right">
+    <div class="form-container">
+      <h2>Login</h2>
+      <p>Sign in to access the dashboard.</p>
+      <div class="input-group">
+        <input type="text" placeholder=" " />
+        <label>Username</label>
+      </div>
+      <div class="input-group">
+        <input [type]="showPassword ? 'text' : 'password'" placeholder=" " />
+        <label>Password</label>
+        <mat-icon class="toggle-password" (click)="showPassword = !showPassword">
+          {{ showPassword ? 'visibility_off' : 'visibility' }}
+        </mat-icon>
+      </div>
+      <button class="login-btn">Login</button>
+      <p class="forgot">Forgot password?</p>
+    </div>
+  </div>
+
+  <div class="mobile-card">
+    <h2>Login</h2>
+    <p>Sign in to access the dashboard</p>
+
+    <div class="input-group">
+      <input type="text" placeholder="Username" />
+    </div>
+
+    <div class="input-group">
+      <input type="password" placeholder="Password" />
+    </div>
+
+    <button class="login-btn">Login</button>
+
+    <a class="forgot">Forgot password?</a>
+  </div>
+</section>
